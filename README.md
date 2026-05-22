@@ -1,6 +1,6 @@
 # Giroscopio PID Dual
 
-Sistema de estabilización tipo *gimbal* de 2 ejes basado en **ESP32**, **MPU6050** y **L298N**, con sintonización de las ganancias PID en tiempo real desde una página web servida por el propio ESP32. **No hace falta recompilar para cambiar `Kp`, `Ki` o `Kd`.**
+Sistema de estabilización tipo *gimbal* de 2 ejes basado en **ESP32**, **MPU6050** y **L298N**, con sintonización de las ganancias PID en tiempo real desde servida por el propio ESP32. **No hace falta recompilar para cambiar `Kp`, `Ki` o `Kd`.**
 
 ---
 
