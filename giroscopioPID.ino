@@ -17,18 +17,18 @@ float anguloY = 0.0;
 
 //VARIABLES PID EJE X (ROLL)
 float posicionDeseadaX = 1; //esta la cambie de 0 a 1 
-float Kp_X = 15.0;  
-float Ki_X = 0.0;   
-float Kd_X = 0.5;   
+float Kp_X = 9.81;  
+float Ki_X = 0.0014;   
+float Kd_X = 0.210934;   
 float errorAnteriorX = 0.0;
 float sumaIntegralX = 0.0;
 float derivadaFiltradaX = 0.0;
 
 //VARIABLES PID EJE Y (PITCH)
 float posicionDeseadaY = 0.0; 
-float Kp_Y = 15.0;  
-float Ki_Y = 0.0;   
-float Kd_Y = 0.5;   
+float Kp_Y = 14.93;  
+float Ki_Y = 0.000032;   
+float Kd_Y = 0.50231;   
 float errorAnteriorY = 0.0;
 float sumaIntegralY = 0.0;
 float derivadaFiltradaY = 0.0;
@@ -55,11 +55,9 @@ void setup() {
   Wire.write(0);
   Wire.endTransmission(true);
 
-  //Serial.println("Calibrando 2 Ejes... Mantén el sensor quieto.");
-  //delay(2000); 
+  
 
   tiempoAnterior = micros();
-  //Serial.println("GIMBAL_READY");
 }
 
 void procesarComando() {
